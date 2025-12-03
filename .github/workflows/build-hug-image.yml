@@ -12,6 +12,11 @@ on:
     branches: [ hug ]
   workflow_dispatch:
 
+  # ADD THIS BLOCK
+permissions:
+  contents: read
+  packages: write 
+
 jobs:
   build:
     runs-on: ubuntu-latest
